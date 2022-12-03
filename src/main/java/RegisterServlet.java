@@ -37,6 +37,38 @@ public class RegisterServlet extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		response.setContentType("text/html");
+		PrintWriter out = response.getWriter();
+		
+		String n = request.getParameter("userName");
+		String p = request.getParameter("password");
+		String e = request.getParameter("email");
+		String c = request.getParameter("language");
+		
+		try {
+			Class.forName("com.mysql.jdbc.Driver");
+			Connection con = DriverManager.getConnection(
+					"jdbc:mysql://localhost:3306/devops", "root", "password");
+			
+			PreparedStatement ps = con.prepareStatement("insert into USERINFORMATION values(?,?,?,?)");
+			
+			ps.setString(1, n);
+			ps.setString(2, p);
+			ps.setString(3, e);
+			ps.setString(4, c);
+			
+			int i = ps.executeUpdate();
+			
+			if (i > 0) {
+				PrintWriter writer = response.getWriter();
+				writer.println("<h1>" + "You have successfully registered an account!" + "<h1>");
+				writer.close();
+			}
+		}
+		catch (Exception exception) {
+			System.out.println(exception);
+		out.close();
+		}
 		doGet(request, response);
 	}
 
