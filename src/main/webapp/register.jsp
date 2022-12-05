@@ -37,8 +37,10 @@
 					<option>French</option>
 				</select>
 			</div>
-			<input type="submit" value="Register" />
-			<a href="<%=request.getContextPath()%>/login.jsp">Forgot your password?</a>
+			<div class="form-group">
+				<input type="submit" value="Register" />
+			</div>
+			<p>Already have an account?  <a href="<%=request.getContextPath()%>/login.jsp">Login Here</a>
 		</form>
 	</div>
 </body>
