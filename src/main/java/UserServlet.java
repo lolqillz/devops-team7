@@ -64,23 +64,24 @@ public class UserServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		//Step 4: Depending on the request servlet path, determine the function to invoke using the following switch statement
 		String action = request.getServletPath();
-		try {
-			switch (action) {
-				case "/insert":
-					break;
-				case "/delete":
-					break;
-				case "/edit":
-					break;
-				case "/update":
-					break;
-				default:
-					listUsers(request, response);
-					break;
-			}
-		} catch (SQLException ex) {
-			throw new ServletException(ex);
-		}
+						try {
+					switch (action) {
+						case "/UserServlet/delete":
+							deleteUser(request, response);
+							break;
+						case "/UserServlet/edit":
+							showEditForm(request, response);
+							break;
+						case "/UserServlet/update":
+							updateUser(request, response);
+							break;
+						case "/UserServlet/dashboard":
+							listUsers(request, response);
+							break;
+					}
+				} catch (SQLException ex) {
+					throw new ServletException(ex);
+				}
 	}
 	
 	private void listUsers(HttpServletRequest request, HttpServletResponse response)
