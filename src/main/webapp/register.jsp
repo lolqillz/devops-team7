@@ -3,21 +3,43 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="ISO-8859-1">
-<title>Insert title here</title>
+	<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+	<title>Register</title>
+	<link rel="stylesheet"
+		href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+		crossorigin="anonymous">
+	<style>
+		body{font: 14px sans-serif; }
+		.wrapper{ width: 360px; padding: 20px; }
+	</style>
 </head>
 <body>
-<form action="RegisterServlet" method="post">
-	Name: <input type="text" name="userName">
-	Password: <input type="password" name="password">
-	Email: <input type="text" name="email">
-	Language: <select name="language">
-		<option>English</option>
-		<option>Spanish</option>
-		<option>French</option>
-	</select>
-	<input type="submit" value="Call Servlet" />
-</form>
-
+	<div class="wrapper">
+		<h3 class="text-center">Register</h3>
+		<form action="RegisterServlet" method="post">
+			<div class="form-group">
+				<label>Name</label>
+				<input type="text" name="userName" class="form-control">
+			</div>
+			<div class="form-group">
+				<label>Password</label>
+				<input type="password" name="password" class="form-control">
+			</div>
+			<div class="form-group">
+				<label>Email</label>
+				<input type="text" name="email" class="form-control">
+			</div>
+			<div class="form-group">
+				Language: <select name="language">
+					<option>English</option>
+					<option>Spanish</option>
+					<option>French</option>
+				</select>
+			</div>
+			<input type="submit" value="Register" />
+			<a href="<%=request.getContextPath()%>/login.jsp">Forgot your password?</a>
+		</form>
+	</div>
 </body>
 </html>
