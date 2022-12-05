@@ -140,6 +140,30 @@ public class UserServlet extends HttpServlet {
 		request.setAttribute("user", existingUser);
 		request.getRequestDispatcher("/userEdit.jsp").forward(request, response);
 	}
+	
+	//method to update the user table base on the form data
+	private void updateUser(HttpServletRequest request, HttpServletResponse response)
+	throws SQLException, IOException {
+		//Step 1: Retrieve value from the request
+		String oriName = request.getParameter("oriName");
+		String name = request.getParameter("name");
+		String password = request.getParameter("password");
+		String email = request.getParameter("email");
+		String language = request.getParameter("language");
+		
+		//Step 2: Attempt connection with database and execute update user SQL query
+		try (Connection connection = getConnection(); PreparedStatement statement = connection.prepareStatement(UPDATE_USERS_SQL);) {
+			statement.setString(1, name);
+			statement.setString(2, password);
+			statement.setString(3, email);
+			statement.setString(4, language);
+			statement.setString(5, oriName);
+			
+			int i = statement.executeUpdate();
+		}
+		//Step 3: redirect back to UserServlet (note: remember to change the url to your project name)
+		response.sendRedirect("http://localhost:8090/HelloWorldJavaEE/UserServlet/dashboard");
+	}
 
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
