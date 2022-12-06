@@ -28,11 +28,11 @@ public class ReviewServlet extends HttpServlet {
 	private String jdbcPassword = "password";
 	// Step 2: Prepare list of SQL prepared statements to perform CRUD to our
 	// database
-	private static final String INSERT_USERS_SQL = "INSERT INTO reviews" + " (name, id, book_id, review) VALUES "+ " (?, ?, ?, ?);";
-	private static final String SELECT_USER_BY_ID = "select name,id,book_id,review from reviews where id =?";
-	private static final String SELECT_ALL_USERS = "select * from reviews ";
-	private static final String DELETE_USERS_SQL = "delete from reviews where id = ?;";
-	private static final String UPDATE_USERS_SQL = "update reviews set name = ?,id= ?, book_id =?,review =? where id = ?;";
+	private static final String INSERT_REVIEWS_SQL = "INSERT INTO reviews" + " (name, id, book_id, review) VALUES "+ " (?, ?, ?, ?);";
+	private static final String SELECT_REVIEW_BY_ID = "select name,id,book_id,review from reviews where id =?";
+	private static final String SELECT_ALL_REVIEWS = "select * from reviews ";
+	private static final String DELETE_REVIEWS_SQL = "delete from reviews where id = ?;";
+	private static final String UPDATE_REVIEWS_SQL = "update reviews set name = ?,id= ?, book_id =?,review =? where id = ?;";
 
 	// Step 3: Implement the getConnection method which facilitates connection to
 	// the database via JDBC
@@ -96,7 +96,7 @@ public class ReviewServlet extends HttpServlet {
 		List<Review> reviews = new ArrayList<>();
 		try (Connection connection = getConnection();
 				// Step 5.1: Create a statement using connection object
-				PreparedStatement preparedStatement = connection.prepareStatement(SELECT_ALL_USERS);) {
+				PreparedStatement preparedStatement = connection.prepareStatement(SELECT_ALL_REVIEWS);) {
 			// Step 5.2: Execute the query or update query
 			ResultSet rs = preparedStatement.executeQuery();
 			// Step 5.3: Process the ResultSet object.
