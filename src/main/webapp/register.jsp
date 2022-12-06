@@ -17,7 +17,7 @@
 <body>
 	<div class="wrapper">
 		<h3 class="text-center">Register</h3>
-		<form action="RegisterServlet" method="post">
+		<form action="register" method="post">
 			<div class="form-group">
 				<label>Name</label>
 				<input type="text" name="userName" class="form-control">
@@ -36,11 +36,14 @@
 					<option>Spanish</option>
 					<option>French</option>
 				</select>
-			</div>
+			</div>	
+			<% String result=(String)request.getAttribute("register-output");
+				if (result==null) { result="";} %>
+			<p><%= result %></p>
 			<div class="form-group">
 				<input type="submit" value="Register" />
 			</div>
-			<p>Already have an account?  <a href="<%=request.getContextPath()%>/login.jsp">Login Here</a>
+			<p>Already have an account?  <a href="<%=request.getContextPath()%>/login">Login Here</a>
 		</form>
 	</div>
 </body>

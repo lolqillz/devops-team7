@@ -25,15 +25,18 @@
 <body>
 	<div class="wrapper">
 		<h3 class="text-center">Login</h3>
-		<form action="LoginServlet" method="post">
+		<form action="login" method="post">
 			<div class="form-group">
 				<label>Name</label>
-				<input type="text" name="userName" class="form-control">
+				<input type="text" name="name" class="form-control">
 			</div>
 			<div class="form-group">
 				<label>Password</label>
 				<input type="password" name="password" class="form-control">
 			</div>
+			<% String result=(String)request.getAttribute("login-output");
+				if (result==null) { result="";}%>
+			<p><%=result %></p>
 			<div class="form-group">
 				<input type="submit" value="Login" />
 			</div>
@@ -41,29 +44,4 @@
 		</form>
 	</div>
 </body>
-<script type="text/javascript">
- 
-    $(document).ready(function() {
-        $("#loginForm").validate({
-            rules: {
-                name: {
-                    required: true,
-                    name: true
-                },
-         
-                password: "required",
-            },
-             
-            messages: {
-                name: {
-                    required: "Please enter name",
-                    name: "Please enter a valid name"
-                },
-                 
-                password: "Please enter password"
-            }
-        });
- 
-    });
-</script>
 </html>
