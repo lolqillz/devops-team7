@@ -28,7 +28,7 @@ public class UserServlet extends HttpServlet {
 	//Step 1: Prepare list of variables used for database connections
 	private String jdbcURL = "jdbc:mysql://localhost:3306/devops";
 	private String jdbcUsername = "root";
-	private String jdbcPassword = "password";
+	private String jdbcPassword = "";
 	
 	//Step 2: Prepare list of SQL prepared statements to perform CRUD to our database
 	private static final String INSERT_USERS_SQL = "INSERT INTO userinformation" + "(name, password, email, language) VALUES" + "(?,?,?);";
@@ -131,7 +131,7 @@ public class UserServlet extends HttpServlet {
 					String password = rs.getString("password");
 					String email = rs.getString("email");
 					String language = rs.getString("language");
-					existingUser = new User(name, password, email, language)
+					existingUser = new User(name, password, email, language);
 				}
 		} catch (SQLException e) {
 			System.out.println(e.getMessage());
