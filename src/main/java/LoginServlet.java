@@ -63,7 +63,7 @@ public class LoginServlet extends HttpServlet {
 				if (password.equals(user.getPassword())) {
 					HttpSession session = request.getSession();
 					session.setAttribute("user", user);
-					destPage = "/UserServlet/dashboard";
+					destPage = "ReviewServlet";
 				} else {
 					request.setAttribute("login-output", "Incorrect password, please try again");
 				}
