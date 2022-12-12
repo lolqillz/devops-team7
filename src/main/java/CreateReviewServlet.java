@@ -33,16 +33,16 @@ public class CreateReviewServlet extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		response.getWriter().append("Served at: ").append(request.getContextPath());
+		response.getWriter().append("Served atttttttttttttttttt: ").append(request.getContextPath());
 	}
 
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		response.setContentType("text/html");
+//		response.setContentType("text/html");
 		//Step 1: Initialize a PrintWriter object to return the html values via the response
-		PrintWriter out = response.getWriter();
+//		PrintWriter out = response.getWriter();
 		
 		//Step 2: retrieve the four parameters from the request from the web form
 		String n = request.getParameter("userName");
@@ -54,7 +54,7 @@ public class CreateReviewServlet extends HttpServlet {
 		try {
 		 Class.forName("com.mysql.jdbc.Driver");
 		 Connection con = DriverManager.getConnection(
-		 "jdbc:mysql://localhost:3306/reviews", "root", "password");
+		 "jdbc:mysql://localhost:3306/devops", "root", "");
 		 
 		//Step 4: implement the sql query using prepared statement (https://docs.oracle.com/javase/tutorial/jdbc/basics/prepared.html)
 		 PreparedStatement ps = con.prepareStatement("insert into REVIEWS values(?,?,?,?)");
@@ -69,20 +69,22 @@ public class CreateReviewServlet extends HttpServlet {
 		  
 		//Step 7: check if the query had been successfully execute, return “You are successfully registered” via the response,
 		   if (i > 0){
-		  PrintWriter writer = response.getWriter();
-		  writer.println("<h1>" + "You have successfully create a review!" + "</h1>");
-		  writer.close(); 
+			   response.sendRedirect(request.getContextPath()+"/ReviewServlet");
+//		  PrintWriter writer = response.getWriter();
+//		  writer.println("<h1>" + "BruhYou have successfully create a review!" + "</h1>");
+//		  writer.close(); 
 		  } 
 		}
 		
 		//Step 8: catch and print out any exception
 		catch (Exception exception) {
 		 System.out.println(exception);
-		 out.close();
+//		 out.close();
 		}
 		
 		// TODO Auto-generated method stub
-		doGet(request, response);
+//		response.sendRedirect(request.getContextPath()+"/ReviewServlet");
+//		doGet(request, response);
 	}
 
 }
