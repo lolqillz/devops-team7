@@ -8,6 +8,6 @@
 <div> V4 - User Authentication + Book Review & Comment Function </div>
 
 <h3> Group Members </h3>
-<div> - Hadi </div>
-<div> - Joel </div>
-<div> - Darrel </div>
+<div> - Joel --> Authentication Feature </div>
+<div> - Darrel --> Book Review Feature </div>
+<div> - Hadi --> Book Comment Feature </div>
