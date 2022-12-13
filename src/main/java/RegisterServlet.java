@@ -99,14 +99,16 @@ public class RegisterServlet extends HttpServlet {
 			int i = ps.executeUpdate();
 			
 			if (i > 0) {
-				request.getRequestDispatcher("/UserServlet/dashboard").forward(request, response);
+				//request.getRequestDispatcher("/UserServlet/dashboard").forward(request, response);
+				request.getRequestDispatcher("ReviewServlet").forward(request, response);
 			}
 			
 			
 		}
 		catch (Exception exception) {
-			System.out.println(exception);
-		out.close();
+//			System.out.println(exception);
+//			//comment out the next 2 lines
+//		out.close();
 		}
 		doGet(request, response);
 	}
