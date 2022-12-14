@@ -62,7 +62,7 @@ public class RegisterServlet extends HttpServlet {
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
 			Connection con = DriverManager.getConnection(
-					"jdbc:mysql://localhost:3306/devops", "root", "");
+					"jdbc:mysql://localhost:3306/usercomments", "root", "password");
 			
 			PreparedStatement ps1 = con.prepareStatement("SELECT * FROM userinformation WHERE name = ?");
 			ps1.setString(1, n);
@@ -110,7 +110,7 @@ public class RegisterServlet extends HttpServlet {
 //			//comment out the next 2 lines
 //		out.close();
 		}
-		doGet(request, response);
+//		doGet(request, response);
 	}
 
 }
