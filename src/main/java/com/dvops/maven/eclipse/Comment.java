@@ -1,11 +1,13 @@
 package com.dvops.maven.eclipse;
 
 public class Comment {
+
 	protected String name;
+	protected String comment;
 	public Comment(String name, String comment) {
 		super();
 		this.name = name;
-		this.comments = comment;
+		this.comment = comment;
 	}
 	public String getName() {
 		return name;
@@ -14,12 +16,10 @@ public class Comment {
 		this.name = name;
 	}
 	public String getComment() {
-		return comments;
+		return comment;
 	}
 	public void setComment(String comment) {
-		this.comments = comment;
+		this.comment = comment;
 	}
-	
-	
-	protected String comments;
+
 }
