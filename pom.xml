@@ -6,7 +6,7 @@
 	<packaging>war</packaging>
 	<name>testing2</name>
 	<description>test project</description>
-	
+
 	<dependencies>
 		<dependency>
 			<groupId>javax.servlet</groupId>
@@ -22,18 +22,35 @@
 		</dependency>
 		<!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
 		<dependency>
- 			<groupId>mysql</groupId>
- 			<artifactId>mysql-connector-java</artifactId>
- 			<version>8.0.25</version>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>8.0.25</version>
 		</dependency>
 		<!-- https://mvnrepository.com/artifact/jstl/jstl -->
 		<dependency>
- 			<groupId>jstl</groupId>
- 			<artifactId>jstl</artifactId>
- 			<version>1.2</version>
+			<groupId>jstl</groupId>
+			<artifactId>jstl</artifactId>
+			<version>1.2</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter -->
+		<dependency>
+			<groupId>org.junit.jupiter</groupId>
+			<artifactId>junit-jupiter</artifactId>
+			<version>5.7.0</version>
+			<scope>test</scope>
 		</dependency>
 	</dependencies>
-	
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+
+		<junit-jupiter.groupId>org.junit.jupiter</junit-jupiter.groupId>
+		<junit-jupiter.artifactId>junit-jupiter</junit-jupiter.artifactId>
+		<junit-jupiter.version>5.7.0</junit-jupiter.version>
+	</properties>
+
 	<build>
 		<plugins>
 			<plugin>
