@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Automated Build Trigger Tests</title>
+<title>Automated Build Trigger Testss</title>
 </head>
 <body>
 <h1>Hello JSP and Servlet!</h1>
