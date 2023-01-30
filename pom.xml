@@ -11,10 +11,6 @@
 	    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	    <maven.compiler.source>1.8</maven.compiler.source>
 	    <maven.compiler.target>1.8</maven.compiler.target>
-	    
-	    <junit-jupiter.groupId>org.junit.jupiter</junit-jupiter.groupId>
-    	<junit-jupiter.artifactId>junit-jupiter</junit-jupiter.artifactId>
-    	<junit-jupiter.version>5.7.0</junit-jupiter.version>
   	</properties>
 	
 	<dependencies>
@@ -44,10 +40,10 @@
 		</dependency>
 		<!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter/5.7.0 -->
 		<dependency>
-		    <groupId>${junit-jupiter.groupId}</groupId>
-		    <artifactId>${junit-jupiter.artifactId}</artifactId>
-		    <version>${junit-jupiter.version}</version>
-		    <scope>test</scope>
+			<groupId>org.junit.jupiter</groupId>
+			<artifactId>junit-jupiter</artifactId>
+			<version>5.7.0</version>
+			<scope>test</scope>
 		</dependency>
 	</dependencies>
 	
@@ -63,6 +59,10 @@
 			<plugin>
 				<artifactId>maven-war-plugin</artifactId>
 				<version>3.2.3</version>
+			</plugin>
+			<plugin>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>2.22.1</version>
 			</plugin>
 		</plugins>
 	</build>
