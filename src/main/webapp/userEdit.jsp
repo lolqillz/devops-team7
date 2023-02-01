@@ -17,11 +17,11 @@
 		</div>
 		
 		<ul class="navbar-nav">
-			<li><a href="<%=request.getContextPath()%>/UserServlet/dashboard" class="nav-link">Back to Dashboard</a></li>
+			<li><a href="<%=request.getContextPath()%>/userManagement.jsp" class="nav-link">Back to Dashboard</a></li>
 		</ul>
 	</nav>
 	
-	<div class="container col-md-6">
+	<div class="container col-md-6" id="user-edit" role="editForm">
 		<div class="card">
 			<div class="card-body">
 			<form>
