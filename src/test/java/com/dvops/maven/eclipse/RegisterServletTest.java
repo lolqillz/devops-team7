@@ -35,7 +35,7 @@ class RegisterServletTest {
 	 */
 	@BeforeEach
 	void setUp() throws Exception {
-		user = new User("Albert", "password", "joelkohmuikiang@gmail.com", "English");
+		user = new User("Brian", "password", "Brian1234@gmail.com", "English");
 	}
 
 	/**
@@ -55,7 +55,7 @@ class RegisterServletTest {
 		HttpServletResponse response = mock(HttpServletResponse.class);
 		RequestDispatcher rd = mock(RequestDispatcher.class);
 		
-		when(request.getParameter("userName")).thenReturn("Albert Gae");
+		when(request.getParameter("userName")).thenReturn("Brian");
 		when(request.getParameter("password")).thenReturn(user.getPassword());
 		when(request.getParameter("email")).thenReturn(user.getEmail());
 		when(request.getParameter("language")).thenReturn(user.getLanguage());

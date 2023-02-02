@@ -29,7 +29,7 @@ class LoginServletTest {
 
 	@BeforeEach
 	void setUp() throws Exception {
-		user = new User("Albert", "password", "joelkohmuikiang@gmail.com", "English");
+		user = new User("Brian", "password", "Brian1234@gmail.com", "English");
 	}
 
 	@AfterEach
@@ -55,7 +55,7 @@ class LoginServletTest {
 		RequestDispatcher rd = mock(RequestDispatcher.class);
 		HttpSession session = mock(HttpSession.class);
 		
-		when(request.getParameter("name")).thenReturn("Albert");
+		when(request.getParameter("name")).thenReturn("Brian");
 		when(request.getParameter("password")).thenReturn("password");
 		when(request.getSession()).thenReturn(session);
 		doNothing().when(session).setAttribute("user", user);
