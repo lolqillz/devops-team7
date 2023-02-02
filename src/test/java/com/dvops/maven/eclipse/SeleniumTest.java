@@ -117,7 +117,7 @@
 		@Test
 		public void checkIndexTitle() {
 			webDriver.navigate().to("http://localhost:8090/HelloWorldJavaEE/index.jsp");
-			assertEquals(webDriver.getTitle(), "Index");
+			assertEquals(webDriver.getTitle(), "Page");
 			System.out.println("title: " + webDriver.getTitle());
 		}
 		
@@ -126,7 +126,7 @@
 			webDriver.navigate().to("http://localhost:8090/HelloWorldJavaEE/index.jsp");
 			WebElement we = webDriver.findElement(By.id("form-content"));
 			System.out.println("Id WebElement: " + we.getAttribute("role"));
-			assertEquals(we.getAttribute("role"), "indexform");
+			assertEquals(we.getAttribute("role"), "test");
 		}
 		
 		@Test
