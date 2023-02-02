@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="6fe056e0-cf63-42fd-8feb-3231f36ef7c7" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/devops-team7/src/main/java/CreateReviewServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/devops-team7/src/main/java/LoginServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/devops-team7/src/main/java/RegisterServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/devops-team7/src/main/java/ReviewServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/devops-team7/src/main/java/UserServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/devops-team7/src/main/java/com/dvops/maven/eclipse/Review.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/devops-team7/src/main/java/com/dvops/maven/eclipse/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/devops-team7/src/main/java/com/dvops/maven/eclipse/UserDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/devops-team7/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/devops-team7/src/main/webapp/create_review.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/devops-team7/src/main/webapp/login.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/devops-team7/src/main/webapp/register.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/devops-team7/src/main/webapp/reviewManagement.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/devops-team7/src/main/webapp/userEdit.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/devops-team7/src/main/webapp/usermanagement.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/devops-team7/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/devops-team7/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/devops-team7/src/main/java/com/dvops/maven/eclipse/Comment.java" beforeDir="false" afterPath="$PROJECT_DIR$/devops-team7/src/main/java/com/dvops/maven/eclipse/Comment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/devops-team7/src/main/java/com/dvops/maven/eclipse/CommentServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/devops-team7/src/main/java/com/dvops/maven/eclipse/CommentServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/devops-team7/src/main/webapp/UserManagement.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/devops-team7/src/main/webapp/UserManagement.jsp" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/devops-team7" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2ItSE03v68T9XO4UTxPm9vXVi9S" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/Brian/IdeaProjects/devops-team7/devops-team7/src/main/java/com/dvops/maven/eclipse"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Brian\IdeaProjects\devops-team7\devops-team7\src\main\java\com\dvops\maven\eclipse" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6fe056e0-cf63-42fd-8feb-3231f36ef7c7" name="Changes" comment="" />
+      <created>1670999270771</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1670999270771</updated>
+      <workItem from="1670999271978" duration="3954000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
