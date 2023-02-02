@@ -10,7 +10,7 @@
 	crossorigin="anonymous">
 </head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>Review Management</title>
 <body>
 	<div class="row">
 		<div class="container">
@@ -19,11 +19,11 @@
 			<div class="container text-left">
 				<!-- Add new user button redirects to the register.jsp page -->
 				<a href="<%=request.getContextPath()%>/create_review.jsp"
-					class="btn btn success">Add New Review</a>
+					class="btn-success">Add New Review</a>
 			</div>
 			<br>
 			<!-- Create a table to list out all current users information -->
-			<table class="table">
+			<table class="table" id="reviewTable" role="reviewList">
 				<thead>
 					<tr>
 						<th>Name</th>

@@ -7,7 +7,7 @@
 <title>Create Review Form</title>
 </head>
 <body>
-<form action="CreateReviewServlet" method="post">
+<form action="CreateReviewServlet" id="form-content" role="createReviewForm" method="post">
 	Name: <input type="text" name="userName">
 	Id: <input type="number" name="id">
 	Book_id: <input type="number" name="book_id">

@@ -17,7 +17,7 @@
 <body>
 	<div class="wrapper">
 		<h3 class="text-center">Register</h3>
-		<form action="register" method="post">
+		<form action="register" id="form-content" role="registerform" method="post">
 			<div class="form-group">
 				<label>Name</label>
 				<input type="text" name="userName" class="form-control">
@@ -43,7 +43,7 @@
 			<div class="form-group">
 				<input type="submit" value="Register" />
 			</div>
-			<p>Already have an account?  <a href="<%=request.getContextPath()%>/login">Login Here</a>
+			<p>Already have an account?  <a class="link" href="<%=request.getContextPath()%>/login">Login Here</a>
 		</form>
 	</div>
 </body>

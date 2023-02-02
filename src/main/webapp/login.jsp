@@ -25,7 +25,7 @@
 <body>
 	<div class="wrapper">
 		<h3 class="text-center">Login</h3>
-		<form action="login" method="post">
+		<form id="form-content" role="loginform" action="login" method="post">
 			<div class="form-group">
 				<label>Name</label>
 				<input type="text" name="name" class="form-control">
@@ -40,7 +40,7 @@
 			<div class="form-group">
 				<input type="submit" value="Login" />
 			</div>
-			<p>Do not have an account?  <a href="<%=request.getContextPath()%>/register.jsp">Register Here</a>
+			<p>Do not have an account?  <a class="link" href="<%=request.getContextPath()%>/register.jsp">Register Here</a>
 		</form>
 	</div>
 </body>

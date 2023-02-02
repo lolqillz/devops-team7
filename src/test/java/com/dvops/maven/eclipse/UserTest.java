@@ -27,6 +27,13 @@ class UserTest {
 		String actual = user.getName();
 		assertEquals(expected, actual);
 	}
+	
+//	@Test
+//	void testSetName() {
+//		String expected = "Yoke";
+//		user.setName(expected);
+//		assertEquals(expected, user.getName());
+//	}
 
 	@Test
 	void testGetPassword() {
