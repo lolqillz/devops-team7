@@ -11,10 +11,9 @@
 <!-- Create a form with the action attribute to specific where to send the form-data when 
 the form is submitted, method attribute to specific the method used (GET, POST, PUT, DELETE, 
 Etc.) -->
-<form action="HelloServlet" method="post">
+<form id="form-content" role="indexform" action="HelloServlet" id="form-content"method="post">
  Enter your name: <input type="text" name="yourName" size="20">
  <!-- Implement submit button with type = submit to perform the request when clicked -->
  <input type="submit" value="Call Servlet" />
-</form>
-</body>
+</form></body>
 </html>
