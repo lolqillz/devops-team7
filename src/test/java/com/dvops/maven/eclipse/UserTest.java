@@ -13,7 +13,7 @@ class UserTest {
 
 	@BeforeEach
 	void setUp() throws Exception {
-		user = new User("Albert", "password", "joelkohmuikiang@gmail.com", "English");
+		user = new User("Brian", "password", "Briantesting123@gmail.com", "English");
 	}
 
 	@AfterEach
@@ -23,7 +23,7 @@ class UserTest {
 	@Test
 	void testGetName() {
 		//fail("Not yet implemented");
-		String expected = "Albert";
+		String expected = "Brian";
 		String actual = user.getName();
 		assertEquals(expected, actual);
 	}
@@ -46,7 +46,7 @@ class UserTest {
 	@Test
 	void testGetEmail() {
 		//fail("Not yet implemented");
-		String expected = "joelkohmuikiang@gmail.com";
+		String expected = "Briantesting123@gmail.com";
 		String actual = user.getEmail();
 		assertEquals(expected, actual);
 	}
