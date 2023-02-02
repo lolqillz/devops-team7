@@ -142,9 +142,10 @@ class SeleniumTest {
 	@Test
 	public void checkUserEditId() {
 		webDriver.navigate().to("http://localhost:8090/HelloWorldJavaEE/userEdit.jsp");
-		WebElement we = webDriver.findElement(By.id("user-edit"));
+		WebElement we = webDriver.findElement(By.id("user-edits"));
 		System.out.println("Id WebElement: " + we.getAttribute("role"));
-		assertEquals(we.getAttribute("role"), "editForm");
+		assertEquals(we.getAttribute("role"), "editForms");
 	}
+
 
 }

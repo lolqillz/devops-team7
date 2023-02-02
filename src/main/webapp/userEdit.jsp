@@ -21,7 +21,7 @@
 		</ul>
 	</nav>
 	
-	<div class="container col-md-6" id="user-edit" role="editForm">
+	<div class="container col-md-6" id="user-edits" role="editForms">
 		<div class="card">
 			<div class="card-body">
 			<form>
