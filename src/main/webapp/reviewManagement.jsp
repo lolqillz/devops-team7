@@ -10,7 +10,7 @@
 	crossorigin="anonymous">
 </head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>Review Management</title>
 <body>
 	<div class="row">
 		<div class="container">
