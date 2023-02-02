@@ -8,7 +8,7 @@ import org.junit.jupiter.api.Test;
 
 class UserTest {
 	
-	//User user = new User ("Joel Koh Mui Kiang", "password", "joelkohmuikiang@gmail.com", "English");
+	
 	private User user;
 
 	@BeforeEach
