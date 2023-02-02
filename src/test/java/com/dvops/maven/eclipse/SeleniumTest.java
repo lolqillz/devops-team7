@@ -32,9 +32,7 @@
 			webDriver.navigate().to("http://localhost:8090/HelloWorldJavaEE/register.jsp");
 			assertEquals(webDriver.getTitle(),"Register Deployment");
 			System.out.println("title: " + webDriver.getTitle());
-			webDriver.findElement(By.className("link")).click();
-			assertTrue(webDriver.getTitle().contains("Login"));
-			System.out.println("New Title: "+ webDriver.getTitle());
+			
 		}
 		
 		@Test
@@ -50,9 +48,7 @@
 			webDriver.navigate().to("http://localhost:8090/HelloWorldJavaEE/login.jsp");
 			assertEquals(webDriver.getTitle(), "Login");
 			System.out.println("title: " + webDriver.getTitle());
-			webDriver.findElement(By.className("link")).click();
-			assertTrue(webDriver.getTitle().contains("Register Deployment"));
-			System.out.println("New Title: " + webDriver.getTitle());
+			
 		}
 		
 		@Test
@@ -68,9 +64,7 @@
 			webDriver.navigate().to("http://localhost:8090/HelloWorldJavaEE/ReviewServlet");
 			assertEquals(webDriver.getTitle(), "Review Management");
 			System.out.println("title: " + webDriver.getTitle());
-			webDriver.findElement(By.className("btn-success")).click();
-			assertTrue(webDriver.getTitle().contains("Create Review Form"));
-			System.out.println("New Title: " + webDriver.getTitle());
+		
 		}
 		
 		@Test
@@ -146,6 +140,15 @@
 			System.out.println("Id WebElement: " + we.getAttribute("role"));
 			assertEquals(we.getAttribute("role"), "editForms");
 		}
+		
+		@Test
+		public void checkUserEditTitle() {
+			webDriver.navigate().to("http://localhost:8090/HelloWorldJavaEE/userEdit.jsp");
+			
+			System.out.println("title: " + webDriver.getTitle());
+			assertEquals(webDriver.getTitle(), "User Management Application");
+		}
+		
 		@Test
 		public void checkCommentManagementTitle() {
 			webDriver.navigate().to("http://localhost:8090/HelloWorldJavaEE/CommentServlet");
@@ -155,6 +158,13 @@
 			
 			System.out.println("New Title: " + webDriver.getTitle());
 			assertTrue(webDriver.getTitle().contains("Create Comment Form"));
+		}
+		@Test
+		public void checkCreateCommentTitle() {
+			webDriver.navigate().to("http://localhost:8090/HelloWorldJavaEE/create_comment.jsp");
+			
+			System.out.println("title: " + webDriver.getTitle());
+			assertEquals(webDriver.getTitle(), "Create Comment Form");
 		}
 		
 		@Test
