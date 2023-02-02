@@ -17,7 +17,7 @@
 		
 		@AfterAll
 		static public void afterTest() {
-			webDriver.quit();
+			webDriver.close();
 		}
 
 		@BeforeAll
