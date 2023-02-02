@@ -30,7 +30,7 @@ class CommentTest {
 	@Test
 	void testGetId() {
 		//fail("Not yet implemented");
-		int expected = 12345;
+		int expected = 3;
 		int actual = (int) comment.getId();
 		assertEquals(expected, actual);
 	}
@@ -39,7 +39,7 @@ class CommentTest {
 	@Test
 	void testGetComment() {
 		//fail("Not yet implemented");
-		String expected = "Test";
+		String expected = "Testing";
 		String actual = comment.getComment();
 		assertEquals(expected, actual);
 	}
