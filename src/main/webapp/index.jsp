@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Index</title>
+<title>Indexs</title>
 </head>
 <body>
 <h1>Hello JSP and Servlet!</h1>
