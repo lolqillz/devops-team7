@@ -15,6 +15,7 @@
 	</style>
 </head>
 <body>
+<h2></h2>
 	<div class="wrapper">
 		<h3 class="text-center">Register</h3>
 		<form action="register" method="post">
