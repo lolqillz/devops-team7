@@ -30,7 +30,7 @@ class SeleniumTest {
 	@Test
 	public void checkRegisterTitle() {
 		webDriver.navigate().to("http://localhost:8090/HelloWorldJavaEE/register.jsp");
-		assertEquals(webDriver.getTitle(),"Register Deployment");
+		assertEquals(webDriver.getTitle(),"Register Deployments");
 		System.out.println("title: " + webDriver.getTitle());
 		webDriver.findElement(By.className("link")).click();
 		assertTrue(webDriver.getTitle().contains("Login"));
