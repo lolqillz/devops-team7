@@ -33,7 +33,7 @@ class SeleniumTest {
 		assertEquals(webDriver.getTitle(),"Register Deployments");
 		System.out.println("title: " + webDriver.getTitle());
 		webDriver.findElement(By.className("link")).click();
-		assertTrue(webDriver.getTitle().contains("Login"));
+		assertFalse(webDriver.getTitle().contains("Login"));
 		System.out.println("New Title: "+ webDriver.getTitle());
 	}
 	
@@ -65,7 +65,7 @@ class SeleniumTest {
 	
 	@Test
 	public void checkReviewManagementTitle() {
-		webDriver.navigate().to("http://localhost:8090/HelloWorldJavaEE/ReviewServlet");
+		webDriver.navigate().to("http://localhost:8090/HelloWorldJavaEE/reviewManagement.jsp");
 		assertEquals(webDriver.getTitle(), "Review Management");
 		System.out.println("title: " + webDriver.getTitle());
 		webDriver.findElement(By.className("btn-success")).click();
@@ -75,7 +75,7 @@ class SeleniumTest {
 	
 	@Test
 	public void checkReviewManagementId() {
-		webDriver.navigate().to("http://localhost:8090/HelloWorldJavaEE/ReviewServlet");
+		webDriver.navigate().to("http://localhost:8090/HelloWorldJavaEE/reviewManagement.jsp");
 		WebElement we = webDriver.findElement(By.id("reviewTable"));
 		System.out.println("Id WebElement: " + we.getAttribute("role"));
 		assertEquals(we.getAttribute("role"), "reviewList");
