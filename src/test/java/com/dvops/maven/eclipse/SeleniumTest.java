@@ -33,7 +33,7 @@ class SeleniumTest {
 		assertEquals(webDriver.getTitle(),"Register Deployments");
 		System.out.println("title: " + webDriver.getTitle());
 		webDriver.findElement(By.className("link")).click();
-		assertFalse(webDriver.getTitle().contains("Login"));
+		assertTrue(webDriver.getTitle().contains("Login"));
 		System.out.println("New Title: "+ webDriver.getTitle());
 	}
 	
